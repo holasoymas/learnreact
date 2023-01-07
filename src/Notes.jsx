@@ -24,7 +24,7 @@ const Notes = (props) => {
       <h1>Notes</h1>
       <ul>
         {notes.map(item =>
-          //Warning :  <Note key={item.id} id={item.id} content={item.content} important={item.important.toString()} date={item.date} />
+          // TODO :  <Note key={item.id} id={item.id} content={item.content} important={item.important.toString()} date={item.date} />
           <Note key={nanoid()} datas={item} />
         )}
       </ul>

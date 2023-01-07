@@ -1,6 +1,7 @@
 // import { nanoid } from 'https://cdn.jsdelivr.net/npm/nanoid/nanoid.js'
 import { notes } from './note'
 import Notes from './Notes';
+import PhoneBook from './PhoneBook';
 import UserAddNotes from './UserAddNotes';
 
 // TODO : Nanoid generate a unique url for the id
@@ -19,7 +20,7 @@ function App() {
 
       <Notes notes={notes} />
       <UserAddNotes notes={notes} />
-
+      <PhoneBook />
     </>
 
   );

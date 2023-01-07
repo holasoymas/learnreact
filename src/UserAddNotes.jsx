@@ -30,14 +30,13 @@ const UserAddNotes = (props) => {
     }
     setNotes(notes.concat(myNewNote));
     setnewNote('');
-    // console.log("This is clicked, ", e.target);
+    // NOTE: console.log("This is clicked, ", e.target);
   }
 
   function handleNoteChange(e) {
     console.log(e.target.value);
     setnewNote(e.target.value);
   }
-
 
   const allNote = showAll ? notes : notes.filter((item) =>
     item.important === true
